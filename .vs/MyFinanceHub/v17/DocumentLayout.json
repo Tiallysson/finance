@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|c:\\users\\tiall\\source\\repos\\myfinancehub\\myfinancehub\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|solutionrelative:myfinancehub\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|c:\\users\\tiall\\source\\repos\\myfinancehub\\myfinancehub\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|solutionrelative:myfinancehub\\frmprincipal.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|c:\\users\\tiall\\source\\repos\\myfinancehub\\myfinancehub\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|solutionrelative:myfinancehub\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|c:\\users\\tiall\\source\\repos\\myfinancehub\\myfinancehub\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|solutionrelative:myfinancehub\\frmlogin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|c:\\users\\tiall\\source\\repos\\myfinancehub\\myfinancehub\\dbhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|solutionrelative:myfinancehub\\dbhelper.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|c:\\users\\tiall\\source\\repos\\myfinancehub\\myfinancehub\\frmcadastro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "RelativeMoniker": "D:0:0:{E44B77C6-C03C-4A9E-9C23-30A932FD76B2}|MyFinanceHub\\MyFinanceHub.vbproj|solutionrelative:myfinancehub\\frmcadastro.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DbHelper.vb",
+              "DocumentMoniker": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\DbHelper.vb",
+              "RelativeDocumentMoniker": "MyFinanceHub\\DbHelper.vb",
+              "ToolTip": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\DbHelper.vb",
+              "RelativeToolTip": "MyFinanceHub\\DbHelper.vb",
+              "ViewState": "AgIAABQAAAAAAAAAAAAjwCMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-01-12T01:47:49.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "frmCadastro.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmCadastro.vb",
+              "RelativeDocumentMoniker": "MyFinanceHub\\frmCadastro.vb",
+              "ToolTip": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmCadastro.vb [Projeto]",
+              "RelativeToolTip": "MyFinanceHub\\frmCadastro.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-01-12T01:34:05.628Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmPrincipal.vb",
+              "DocumentMoniker": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmPrincipal.vb",
+              "RelativeDocumentMoniker": "MyFinanceHub\\frmPrincipal.vb",
+              "ToolTip": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmPrincipal.vb",
+              "RelativeToolTip": "MyFinanceHub\\frmPrincipal.vb",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-01-12T01:30:16.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "frmLogin.vb",
+              "DocumentMoniker": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmLogin.vb",
+              "RelativeDocumentMoniker": "MyFinanceHub\\frmLogin.vb",
+              "ToolTip": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmLogin.vb",
+              "RelativeToolTip": "MyFinanceHub\\frmLogin.vb",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAgwBUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-01-12T01:02:05.353Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmPrincipal.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmPrincipal.vb",
+              "RelativeDocumentMoniker": "MyFinanceHub\\frmPrincipal.vb",
+              "ToolTip": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmPrincipal.vb [Projeto]",
+              "RelativeToolTip": "MyFinanceHub\\frmPrincipal.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-01-12T01:00:59.242Z",
+              "EditorCaption": " [Projeto]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmLogin.vb [Projeto]",
+              "DocumentMoniker": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmLogin.vb",
+              "RelativeDocumentMoniker": "MyFinanceHub\\frmLogin.vb",
+              "ToolTip": "C:\\Users\\tiall\\source\\repos\\MyFinanceHub\\MyFinanceHub\\frmLogin.vb [Projeto]",
+              "RelativeToolTip": "MyFinanceHub\\frmLogin.vb [Projeto]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
+              "WhenOpened": "2025-01-12T00:14:44.122Z",
+              "EditorCaption": " [Projeto]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
