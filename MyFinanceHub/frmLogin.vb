@@ -15,19 +15,14 @@
                                           AND U.PASSWORD = '{1}'", user, password)
 
         If dt.Tables(0).Rows.Count > 0 Then
-            ' Se o usuário for encontrado e a senha estiver correta, verifica se os termos foram aceitos
-            If chkTerms.Checked = False Then
-                MessageBox.Show("Você precisa aceitar os termos de utilização para prosseguir.", "", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                Return
-            End If
 
             Dim firstName As String = dt.Tables(0).Rows(0)("FIRST_NAME").ToString()
             Dim userId As Integer = dt.Tables(0).Rows(0)("ID").ToString()
 
-            frmPrincipal.name = firstName
-            frmPrincipal.userId = userId
+            frmHome.name = firstName
+            frmHome.userId = userId
             ' Exibe o formulário principal após a validação bem-sucedida
-            frmPrincipal.Show()
+            frmHome.Show()
             Me.Hide()
         Else
             ' Caso o usuário ou senha estejam incorretos
@@ -46,6 +41,6 @@
     End Sub
 
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        frmCadastro.Show()
+        frmUsers.Show()
     End Sub
 End Class

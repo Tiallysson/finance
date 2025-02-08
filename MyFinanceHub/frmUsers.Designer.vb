@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmCadastro
+Partial Class frmUsers
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -22,6 +22,7 @@ Partial Class frmCadastro
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmUsers))
         LinkLabel1 = New LinkLabel()
         Label4 = New Label()
         chkTerms = New CheckBox()
@@ -201,7 +202,7 @@ Partial Class frmCadastro
         TextBox4.Size = New Size(212, 23)
         TextBox4.TabIndex = 29
         ' 
-        ' frmCadastro
+        ' frmUsers
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -224,7 +225,8 @@ Partial Class frmCadastro
         Controls.Add(txtPassword)
         Controls.Add(txtUsername)
         Controls.Add(Label1)
-        Name = "frmCadastro"
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Name = "frmUsers"
         Text = "frmCadastro"
         ResumeLayout(False)
         PerformLayout()

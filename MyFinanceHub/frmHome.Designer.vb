@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class frmPrincipal
+Partial Class frmHome
     Inherits System.Windows.Forms.Form
 
     'Descartar substituições de formulário para limpar a lista de componentes.
@@ -23,21 +23,28 @@ Partial Class frmPrincipal
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim DataGridViewCellStyle1 As DataGridViewCellStyle = New DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmHome))
         lblName = New Label()
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
-        txtTotalValue = New Label()
-        txtFiveDays = New Label()
-        txtLastExit = New Label()
-        txtLastEntry = New Label()
+        lblTotalValue = New Label()
+        lblFiveDays = New Label()
+        lblLastExit = New Label()
+        lblLastEntry = New Label()
         txtCoin = New Label()
         Label5 = New Label()
         Label6 = New Label()
         Label7 = New Label()
         dgvTransactions = New DataGridView()
+        ptbMenu = New PictureBox()
+        pnlMenu = New Panel()
+        PictureBox2 = New PictureBox()
+        pcbButtonExit = New PictureBox()
+        Editar = New DataGridViewImageColumn()
         clmValue = New DataGridViewTextBoxColumn()
+        Id = New DataGridViewTextBoxColumn()
         clmDescription = New DataGridViewTextBoxColumn()
         clmTransaction = New DataGridViewTextBoxColumn()
         clmData = New DataGridViewTextBoxColumn()
@@ -45,15 +52,19 @@ Partial Class frmPrincipal
         clmStatus = New DataGridViewTextBoxColumn()
         clmPayment = New DataGridViewTextBoxColumn()
         CType(dgvTransactions, ComponentModel.ISupportInitialize).BeginInit()
+        CType(ptbMenu, ComponentModel.ISupportInitialize).BeginInit()
+        pnlMenu.SuspendLayout()
+        CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
+        CType(pcbButtonExit, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblName
         ' 
         lblName.AutoSize = True
-        lblName.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        lblName.Location = New Point(42, 9)
+        lblName.Font = New Font("Segoe UI Variable Display Semib", 20F, FontStyle.Bold)
+        lblName.Location = New Point(48, 23)
         lblName.Name = "lblName"
-        lblName.Size = New Size(60, 21)
+        lblName.Size = New Size(100, 36)
         lblName.TabIndex = 1
         lblName.Text = "{name}"
         ' 
@@ -71,7 +82,7 @@ Partial Class frmPrincipal
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Variable Display Semib", 9F, FontStyle.Bold)
-        Label2.Location = New Point(201, 97)
+        Label2.Location = New Point(214, 97)
         Label2.Name = "Label2"
         Label2.Size = New Size(141, 16)
         Label2.TabIndex = 3
@@ -81,67 +92,67 @@ Partial Class frmPrincipal
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Segoe UI Variable Display Semib", 9F, FontStyle.Bold)
-        Label3.Location = New Point(444, 97)
+        Label3.Location = New Point(463, 97)
         Label3.Name = "Label3"
-        Label3.Size = New Size(76, 16)
+        Label3.Size = New Size(81, 16)
         Label3.TabIndex = 4
-        Label3.Text = "Última saída:"
+        Label3.Text = "Última venda:"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
         Label4.Font = New Font("Segoe UI Variable Display Semib", 9F, FontStyle.Bold)
-        Label4.Location = New Point(611, 97)
+        Label4.Location = New Point(663, 97)
         Label4.Name = "Label4"
         Label4.Size = New Size(91, 16)
         Label4.TabIndex = 5
-        Label4.Text = "Última entrada:"
+        Label4.Text = "Última compra:"
         ' 
-        ' txtTotalValue
+        ' lblTotalValue
         ' 
-        txtTotalValue.AutoSize = True
-        txtTotalValue.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtTotalValue.Location = New Point(78, 127)
-        txtTotalValue.Name = "txtTotalValue"
-        txtTotalValue.Size = New Size(16, 21)
-        txtTotalValue.TabIndex = 6
-        txtTotalValue.Text = "-"
+        lblTotalValue.AutoSize = True
+        lblTotalValue.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblTotalValue.Location = New Point(84, 127)
+        lblTotalValue.Name = "lblTotalValue"
+        lblTotalValue.Size = New Size(16, 21)
+        lblTotalValue.TabIndex = 6
+        lblTotalValue.Text = "-"
         ' 
-        ' txtFiveDays
+        ' lblFiveDays
         ' 
-        txtFiveDays.AutoSize = True
-        txtFiveDays.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtFiveDays.Location = New Point(230, 127)
-        txtFiveDays.Name = "txtFiveDays"
-        txtFiveDays.Size = New Size(16, 21)
-        txtFiveDays.TabIndex = 7
-        txtFiveDays.Text = "-"
+        lblFiveDays.AutoSize = True
+        lblFiveDays.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblFiveDays.Location = New Point(250, 127)
+        lblFiveDays.Name = "lblFiveDays"
+        lblFiveDays.Size = New Size(16, 21)
+        lblFiveDays.TabIndex = 7
+        lblFiveDays.Text = "-"
         ' 
-        ' txtLastExit
+        ' lblLastExit
         ' 
-        txtLastExit.AutoSize = True
-        txtLastExit.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtLastExit.Location = New Point(480, 127)
-        txtLastExit.Name = "txtLastExit"
-        txtLastExit.Size = New Size(16, 21)
-        txtLastExit.TabIndex = 8
-        txtLastExit.Text = "-"
+        lblLastExit.AutoSize = True
+        lblLastExit.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblLastExit.Location = New Point(499, 127)
+        lblLastExit.Name = "lblLastExit"
+        lblLastExit.Size = New Size(16, 21)
+        lblLastExit.TabIndex = 8
+        lblLastExit.Text = "-"
         ' 
-        ' txtLastEntry
+        ' lblLastEntry
         ' 
-        txtLastEntry.AutoSize = True
-        txtLastEntry.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtLastEntry.Location = New Point(647, 127)
-        txtLastEntry.Name = "txtLastEntry"
-        txtLastEntry.Size = New Size(16, 21)
-        txtLastEntry.TabIndex = 9
-        txtLastEntry.Text = "-"
+        lblLastEntry.AutoSize = True
+        lblLastEntry.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        lblLastEntry.Location = New Point(699, 127)
+        lblLastEntry.Name = "lblLastEntry"
+        lblLastEntry.Size = New Size(16, 21)
+        lblLastEntry.TabIndex = 9
+        lblLastEntry.Text = "-"
         ' 
         ' txtCoin
         ' 
         txtCoin.AutoSize = True
         txtCoin.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        txtCoin.Location = New Point(42, 127)
+        txtCoin.Location = New Point(48, 127)
         txtCoin.Name = "txtCoin"
         txtCoin.Size = New Size(30, 21)
         txtCoin.TabIndex = 10
@@ -151,7 +162,7 @@ Partial Class frmPrincipal
         ' 
         Label5.AutoSize = True
         Label5.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label5.Location = New Point(194, 127)
+        Label5.Location = New Point(214, 127)
         Label5.Name = "Label5"
         Label5.Size = New Size(30, 21)
         Label5.TabIndex = 11
@@ -161,7 +172,7 @@ Partial Class frmPrincipal
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label6.Location = New Point(444, 127)
+        Label6.Location = New Point(463, 127)
         Label6.Name = "Label6"
         Label6.Size = New Size(30, 21)
         Label6.TabIndex = 12
@@ -171,7 +182,7 @@ Partial Class frmPrincipal
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Segoe UI Variable Display Semib", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label7.Location = New Point(611, 127)
+        Label7.Location = New Point(663, 127)
         Label7.Name = "Label7"
         Label7.Size = New Size(30, 21)
         Label7.TabIndex = 13
@@ -179,82 +190,162 @@ Partial Class frmPrincipal
         ' 
         ' dgvTransactions
         ' 
+        dgvTransactions.AllowUserToAddRows = False
+        dgvTransactions.AllowUserToDeleteRows = False
+        dgvTransactions.AllowUserToOrderColumns = True
         DataGridViewCellStyle1.BackColor = Color.White
         dgvTransactions.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         dgvTransactions.BackgroundColor = Color.White
         dgvTransactions.BorderStyle = BorderStyle.None
         dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        dgvTransactions.Columns.AddRange(New DataGridViewColumn() {clmValue, clmDescription, clmTransaction, clmData, clmCategory, clmStatus, clmPayment})
+        dgvTransactions.Columns.AddRange(New DataGridViewColumn() {Editar, clmValue, Id, clmDescription, clmTransaction, clmData, clmCategory, clmStatus, clmPayment})
+        dgvTransactions.EditMode = DataGridViewEditMode.EditOnF2
         dgvTransactions.Location = New Point(48, 203)
         dgvTransactions.Name = "dgvTransactions"
-        dgvTransactions.Size = New Size(654, 182)
+        dgvTransactions.ReadOnly = True
+        dgvTransactions.Size = New Size(748, 296)
         dgvTransactions.TabIndex = 14
+        ' 
+        ' ptbMenu
+        ' 
+        ptbMenu.Cursor = Cursors.Hand
+        ptbMenu.Image = My.Resources.Resources.menu_hamburguer
+        ptbMenu.Location = New Point(776, 29)
+        ptbMenu.Name = "ptbMenu"
+        ptbMenu.Size = New Size(24, 27)
+        ptbMenu.SizeMode = PictureBoxSizeMode.Zoom
+        ptbMenu.TabIndex = 15
+        ptbMenu.TabStop = False
+        ' 
+        ' pnlMenu
+        ' 
+        pnlMenu.BackColor = SystemColors.ButtonHighlight
+        pnlMenu.Controls.Add(PictureBox2)
+        pnlMenu.Controls.Add(pcbButtonExit)
+        pnlMenu.Location = New Point(634, 22)
+        pnlMenu.Name = "pnlMenu"
+        pnlMenu.Size = New Size(120, 37)
+        pnlMenu.TabIndex = 16
+        pnlMenu.Visible = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.Cursor = Cursors.Hand
+        PictureBox2.Image = My.Resources.Resources.adicionar__1_1
+        PictureBox2.Location = New Point(51, 7)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(27, 27)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 1
+        PictureBox2.TabStop = False
+        ' 
+        ' pcbButtonExit
+        ' 
+        pcbButtonExit.Cursor = Cursors.Hand
+        pcbButtonExit.Image = My.Resources.Resources.cartao_de_endereco
+        pcbButtonExit.Location = New Point(94, 7)
+        pcbButtonExit.Name = "pcbButtonExit"
+        pcbButtonExit.Size = New Size(23, 27)
+        pcbButtonExit.SizeMode = PictureBoxSizeMode.Zoom
+        pcbButtonExit.TabIndex = 0
+        pcbButtonExit.TabStop = False
+        ' 
+        ' Editar
+        ' 
+        Editar.HeaderText = ""
+        Editar.Image = My.Resources.Resources.lapis__1_
+        Editar.ImageLayout = DataGridViewImageCellLayout.Zoom
+        Editar.Name = "Editar"
+        Editar.ReadOnly = True
+        Editar.Width = 20
         ' 
         ' clmValue
         ' 
         clmValue.DataPropertyName = "VALOR"
         clmValue.HeaderText = "Valor:"
         clmValue.Name = "clmValue"
+        clmValue.ReadOnly = True
+        ' 
+        ' Id
+        ' 
+        Id.DataPropertyName = "ID"
+        Id.HeaderText = "Id"
+        Id.Name = "Id"
+        Id.ReadOnly = True
+        Id.Visible = False
         ' 
         ' clmDescription
         ' 
         clmDescription.DataPropertyName = "DESCRICAO"
         clmDescription.HeaderText = "Descrição:"
         clmDescription.Name = "clmDescription"
+        clmDescription.ReadOnly = True
         ' 
         ' clmTransaction
         ' 
         clmTransaction.DataPropertyName = "TIPO_TRANSACAO_DESC"
         clmTransaction.HeaderText = "Tipo da Transação:"
         clmTransaction.Name = "clmTransaction"
+        clmTransaction.ReadOnly = True
         ' 
         ' clmData
         ' 
         clmData.DataPropertyName = "DATA_TRANSACAO"
         clmData.HeaderText = "Data:"
         clmData.Name = "clmData"
+        clmData.ReadOnly = True
         ' 
         ' clmCategory
         ' 
         clmCategory.DataPropertyName = "CATEGORIA"
         clmCategory.HeaderText = "Categoria:"
         clmCategory.Name = "clmCategory"
+        clmCategory.ReadOnly = True
         ' 
         ' clmStatus
         ' 
         clmStatus.DataPropertyName = "STATUS"
         clmStatus.HeaderText = "Status:"
         clmStatus.Name = "clmStatus"
+        clmStatus.ReadOnly = True
         ' 
         ' clmPayment
         ' 
         clmPayment.DataPropertyName = "METODO_PAGAMENTO"
         clmPayment.HeaderText = "Método de pagamento:"
         clmPayment.Name = "clmPayment"
+        clmPayment.ReadOnly = True
         ' 
-        ' frmPrincipal
+        ' frmHome
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.White
-        ClientSize = New Size(752, 450)
+        ClientSize = New Size(838, 511)
+        Controls.Add(pnlMenu)
+        Controls.Add(ptbMenu)
         Controls.Add(dgvTransactions)
         Controls.Add(Label7)
         Controls.Add(Label6)
         Controls.Add(Label5)
         Controls.Add(txtCoin)
-        Controls.Add(txtLastEntry)
-        Controls.Add(txtLastExit)
-        Controls.Add(txtFiveDays)
-        Controls.Add(txtTotalValue)
+        Controls.Add(lblLastEntry)
+        Controls.Add(lblLastExit)
+        Controls.Add(lblFiveDays)
+        Controls.Add(lblTotalValue)
         Controls.Add(Label4)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(lblName)
-        Name = "frmPrincipal"
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        Name = "frmHome"
         Text = "frmPrincipal"
         CType(dgvTransactions, ComponentModel.ISupportInitialize).EndInit()
+        CType(ptbMenu, ComponentModel.ISupportInitialize).EndInit()
+        pnlMenu.ResumeLayout(False)
+        CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
+        CType(pcbButtonExit, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -263,16 +354,22 @@ Partial Class frmPrincipal
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents txtTotalValue As Label
-    Friend WithEvents txtFiveDays As Label
-    Friend WithEvents txtLastExit As Label
-    Friend WithEvents txtLastEntry As Label
+    Friend WithEvents lblTotalValue As Label
+    Friend WithEvents lblFiveDays As Label
+    Friend WithEvents lblLastExit As Label
+    Friend WithEvents lblLastEntry As Label
     Friend WithEvents txtCoin As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents dgvTransactions As DataGridView
+    Friend WithEvents ptbMenu As PictureBox
+    Friend WithEvents pnlMenu As Panel
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents pcbButtonExit As PictureBox
+    Friend WithEvents Editar As DataGridViewImageColumn
     Friend WithEvents clmValue As DataGridViewTextBoxColumn
+    Friend WithEvents Id As DataGridViewTextBoxColumn
     Friend WithEvents clmDescription As DataGridViewTextBoxColumn
     Friend WithEvents clmTransaction As DataGridViewTextBoxColumn
     Friend WithEvents clmData As DataGridViewTextBoxColumn
