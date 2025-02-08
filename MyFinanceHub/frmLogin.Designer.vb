@@ -22,6 +22,7 @@ Partial Class frmLogin
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmLogin))
         Label1 = New Label()
         txtUsername = New TextBox()
         txtPassword = New TextBox()
@@ -29,7 +30,6 @@ Partial Class frmLogin
         btnCancel = New Button()
         Label2 = New Label()
         Label3 = New Label()
-        chkTerms = New CheckBox()
         Label4 = New Label()
         LinkLabel1 = New LinkLabel()
         SuspendLayout()
@@ -97,16 +97,6 @@ Partial Class frmLogin
         Label3.TabIndex = 7
         Label3.Text = "Usuário"
         ' 
-        ' chkTerms
-        ' 
-        chkTerms.AutoSize = True
-        chkTerms.Location = New Point(192, 210)
-        chkTerms.Name = "chkTerms"
-        chkTerms.Size = New Size(184, 19)
-        chkTerms.TabIndex = 8
-        chkTerms.Text = "Aceito os termos de utilização"
-        chkTerms.UseVisualStyleBackColor = True
-        ' 
         ' Label4
         ' 
         Label4.AutoSize = True
@@ -135,7 +125,6 @@ Partial Class frmLogin
         ClientSize = New Size(607, 363)
         Controls.Add(LinkLabel1)
         Controls.Add(Label4)
-        Controls.Add(chkTerms)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(btnCancel)
@@ -144,6 +133,7 @@ Partial Class frmLogin
         Controls.Add(txtUsername)
         Controls.Add(Label1)
         FormBorderStyle = FormBorderStyle.None
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "frmLogin"
         StartPosition = FormStartPosition.CenterScreen
         Text = "frmLogin"
@@ -158,7 +148,6 @@ Partial Class frmLogin
     Friend WithEvents btnCancel As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents chkTerms As CheckBox
     Friend WithEvents Label4 As Label
     Friend WithEvents LinkLabel1 As LinkLabel
 End Class

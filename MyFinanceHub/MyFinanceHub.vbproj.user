@@ -1,13 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\tiall\OneDrive\Documentos\finance\MyFinanceHub\My Project\PublishProfiles\ClickOnceProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
   <ItemGroup>
-    <Compile Update="frmCadastro.vb">
+    <Compile Update="frmEditTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmTransactions.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmUsers.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmLogin.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmPrincipal.vb">
+    <Compile Update="frmHome.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

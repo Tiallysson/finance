@@ -13,10 +13,10 @@ Option Explicit On
 
 Imports System
 Imports System.Reflection
-<Assembly: System.Reflection.AssemblyCompanyAttribute("MyFinanceHub"),  _
+<Assembly: System.Reflection.AssemblyCompanyAttribute("Tiallysson.dev System"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+313c07a205340e57122986d16c79a67a1fe11931"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("MyFinanceHub"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("MyFinanceHub"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _

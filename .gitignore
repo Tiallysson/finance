@@ -1,0 +1,25 @@
+
+# Diretórios do Visual Studio
+.vs/
+Debug/
+Release/
+TestResults/
+*.user
+*.suo
+*.cache
+*.log
+
+# Arquivos gerados
+*.exe
+*.dll
+*.pdb
+*.obj
+*.bak
+*.swp
+*.sln.docstates
+
+# Pacotes e dependências
+packages/
+node_modules/
+bin/
+obj/
